@@ -1,0 +1,21 @@
+name: economy
+version: 0.1
+description: for first online season2
+main: economy.main
+website: https://github.com/catking562/minecraft-plugins-economy/tree/master
+author: taewookim562
+
+commands
+  골드:
+    description: money
+    permission: economy.user
+
+permissions:
+  economy.admin:
+    description: admin permission
+    default: op
+    children:
+      economy.user: true
+  economy.user:
+    description: user permission
+    default: true
